@@ -1,0 +1,129 @@
+.App {
+}
+
+.App-header {
+  background-color: #222;
+  height: 70px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.sendButton {
+    width: 250px;
+    background-color: white;
+    color: black;
+    border: 2px solid #FEEEF9;
+    padding: 15px 40px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 16px;
+    position: absolute;
+    margin-left: 20px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.sendButton:hover {
+    background-color: #FEEEF9;
+}
+
+.subButton {
+    background-color: white;
+    color: black;
+    border: 2px solid grey;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 16px;
+    position: absolute;
+    margin-left: 1120px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.subButton:hover {
+    background-color: grey;
+}
+
+.letter {
+  height: 20px;
+  width: 50px;
+  background-color: white;
+  position: absolute;
+  text-align: center;
+  border: 2px solid red;
+}
+
+.rectangleSender {
+  width: 120px;
+  border-radius: 5px;
+  background-color: #D7D8D8;
+  position: absolute;
+  margin-left: 300px;
+  text-align: center;
+  font-size: medium;
+  padding: 15px 40px;
+}
+
+.rectangleReceiver {
+  width: 120px;
+  border-radius: 5px;
+  background-color: #D7D8D8;
+  position: absolute;
+  margin-left: 900px;
+  text-align: center;
+  font-size: medium;
+  padding: 15px 40px;
+}
+
+.line {
+  position: absolute;
+  margin-left: 500px;
+  border: 1px solid #D7D8D8;
+  z-index:-1;
+}
+
+.eventChannel {
+  border-radius: 50px;
+  margin-left: 550px;
+  margin-top: 270px;
+  position: absolute;
+  border: 2px solid black;
+  padding: 3px 5px;
+  z-index:-1;
+}
+
+.pubsubsvg {
+  margin-left: 667px;
+  margin-top: 225px;
+}
+.linesub {
+  stroke: black;
+  stroke-width: 2;
+  stroke-dasharray: 5;
+  stroke-dashoffset: 0;
+}
+
+@keyframes draw {
+  to { stroke-dashoffset: 1000; }
+}
+
+@keyframes letter-fly {
+  from { transform: translateX(320px); }
+  to { transform: translateX(900px); }
+}
+
+@keyframes message-fly {
+  from { transform: translateX(520px); }
+  to { transform: translateX(610px); }
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
